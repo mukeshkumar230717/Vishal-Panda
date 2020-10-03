@@ -23,10 +23,10 @@ int main()
 float large(float arr[],int n)
 {
 	float max=arr[0];
-	for(int j=1;j<n;j++)
+	for(int j=0;j<=n;j++)
 	{
-		if(arr[j]>max)
-		max=arr[j];
+		if(arr[j+1]>max)
+		max=arr[j+1];
 	}
 	return max;
 }
